@@ -1,5 +1,5 @@
 {% assign original=alldocs | where_exp:"item", "item.lang == 'en' or item.lang == nil" | where_exp:"item", "item.ref == include.page.url or item.url == include.page.url" | first %}
-{% assign t=site.alldocs | where_exp:"item", "item.lang == tlangname and item.ref == include.page.url" | first %}
+{% assign t=site.alldocs | where_exp:"item", "item.lang == tlang and item.ref == include.page.url" | first %}
 {%- capture page_title -%}
   {%- if t != nil -%}
     <a href="{{ t.permalink | relative_url }}"> {{ t.title }} ({{ original.title }})
