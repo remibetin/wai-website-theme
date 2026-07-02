@@ -1,5 +1,5 @@
 ---
-title: "Old document"
+title: "Document Status: Archived"
 lang: en
 doc-note-type: archived
 class: wai-headings

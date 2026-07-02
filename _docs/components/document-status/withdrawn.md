@@ -1,5 +1,5 @@
 ---
-title: "Old document"
+title: "Document Status: Withdrawn"
 lang: en
 doc-note-type: withdrawn
 class: wai-headings

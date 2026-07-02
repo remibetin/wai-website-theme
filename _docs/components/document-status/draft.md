@@ -1,7 +1,8 @@
 ---
-title: "Document Notes: Draft"
+title: "Document Status: Draft"
 lang: en
 doc-note-type: draft
+class: wai-headings
 ---
 
 <section class="wai-status-banner wai-status-banner--draft">

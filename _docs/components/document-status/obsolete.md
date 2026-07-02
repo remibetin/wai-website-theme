@@ -1,5 +1,5 @@
 ---
-title: "Old document"
+title: "Document Status: Obsolete"
 lang: en
 doc-note-type: obsolete
 class: wai-headings
