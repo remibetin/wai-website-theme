@@ -2,23 +2,9 @@
 title: "Document Notes: Draft"
 lang: en
 doc-note-type: draft
-doc-note-message-md: This is the **message** for this document.
 ---
 
-This type of document note is specified in the frontmatter of the document:
-
-```yaml
-...
-doc-note-type: draft
-doc-note-message-md: This is the **message** for this document.
-...
-```
-
-You can also use HTML:
-
-```yaml
-...
-doc-note-type: draft
-doc-note-message: <p>This is the <strong>message</strong> for this document.</p>
-...
-```
+<section class="wai-status-banner wai-status-banner--draft">
+    <h2>This is an in-progress draft.</h2>
+    <p>We welcome your comments via GitHub or email from the links below under Help improve this page. You are also welcome to join the ARRM Community Group to contribute.</p>
+</section>

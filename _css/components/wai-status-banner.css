@@ -1,0 +1,61 @@
+/*------------------------------------*\
+    #Status banners
+\*------------------------------------*/
+
+:root {
+  --w3c-icon-archive: url("data:image/svg+xml,%3Csvg%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cdefs%2F%3E%3Cpath%20aria-hidden%3D%22true%22%20d%3D%22M504%20255.531c.253%20136.64-111.18%20248.372-247.82%20248.468-59.015.042-113.223-20.53-155.822-54.911-11.077-8.94-11.905-25.541-1.839-35.607l11.267-11.267c8.609-8.609%2022.353-9.551%2031.891-1.984C173.062%20425.135%20212.781%20440%20256%20440c101.705%200%20184-82.311%20184-184%200-101.705-82.311-184-184-184-48.814%200-93.149%2018.969-126.068%2049.932l50.754%2050.754c10.08%2010.08%202.941%2027.314-11.313%2027.314H24c-8.837%200-16-7.163-16-16V38.627c0-14.254%2017.234-21.393%2027.314-11.314l49.372%2049.372C129.209%2034.136%20189.552%208%20256%208c136.81%200%20247.747%20110.78%20248%20247.531zm-180.912%2078.784l9.823-12.63c8.138-10.463%206.253-25.542-4.21-33.679L288%20256.349V152c0-13.255-10.745-24-24-24h-16c-13.255%200-24%2010.745-24%2024v135.651l65.409%2050.874c10.463%208.137%2025.541%206.253%2033.679-4.21z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.wai-status-banner {
+  display: block;
+  border: 5px solid;
+  margin-block-end: 1.875rem;
+  max-width: 47rem;  /* Matches max width of main content region on two-column templates */
+  padding: 1.5rem;
+}
+
+.wai-status-banner p {
+  margin: 1rem 0 0;
+}
+
+.wai-status-banner * {
+  margin-block-start: 1rem;
+}
+
+.wai-status-banner h2 {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.125rem;
+  border: none;
+  padding-block-end: 0;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+.wai-status-banner--archive {
+  border-color: var(--w3c-info-color);
+
+  h2::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    height: 1lh;
+    width: 1lh;
+    mask: var(--w3c-icon-archive) center / contain no-repeat;
+    background: var(--w3c-off-black);
+    margin-right: 0.5rem;
+  }
+
+}
+
+.wai-status-banner--obsolete {
+  border-color: var(--w3c-error-color);
+}
+
+.wai-status-banner--withdrawn {
+  border-color: var(--w3c-warning-color);
+}
+
+.wai-status-banner--draft {
+  border-color: var(--w3c-warning-color);
+}

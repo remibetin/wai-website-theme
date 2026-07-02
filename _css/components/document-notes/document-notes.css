@@ -1,7 +1,7 @@
 .doc-note {
   & h1 {
     &::before{
-      background-color: var(--gold);
+      background-color: #df9a07;
       color: var(--dk-blue);
       display: inline-block;
       padding: 4px 8px;
@@ -39,14 +39,24 @@
 .doc-archived {
   & h1::before {
     content: "Archived";
+    background-color: var(--w3c-purple);
+    color: var(--off-white);
   }
 }
 
-.doc-deprecated {
+.doc-withdrawn {
   & h1::before {
-    content: "Deprecated";
-      background-color: var(--faded-red);
-      color: var(--pure-white);
+    content: "Withdrawn";
+    background-color: var(--w3c-off-black);
+    color: var(--off-white);
+  }
+}
+
+.doc-obsolete {
+  & h1::before {
+    content: "Obsolete";
+    background-color: var(--faded-red);
+    color: var(--pure-white);
   }
   & .doc-note-box {
     border-color: var(--faded-red);
