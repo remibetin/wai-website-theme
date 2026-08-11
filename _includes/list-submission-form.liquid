@@ -28,7 +28,7 @@
   {%- if include.DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
     {% assign action = "http://localhost:8000/" %}
   {%- elsif include.action == nil -%}
-    {% assign action = "https://wai-website.netlify.app/.netlify/functions/list-submission" %}
+    {% assign action = "https://rb-wai.netlify.app/.netlify/functions/list-submission" %}
   {% else %}
     {% assign action = include.action %}
   {%- endif -%}
